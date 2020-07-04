@@ -7,16 +7,16 @@
 <h2>@Model.Name</h2>
 
 <ul>
-    <li>@Model.MembershipType.Name</li>
+    <li>Membership Type: @Model.MembershipType.Name</li>
 
     @if (Model.BirthDate.HasValue)
     {
-    <li>@Model.BirthDate.Value.ToShortDateString()</li>
+        <li>Birthday: @Model.BirthDate.Value.ToString("dd MMM yyyy")</li>
     }
 
+    
 
 
-        
 
 </ul>
 
